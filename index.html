@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Grandprix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Type Grandprix 🏁</h1>
+        <div class="race-track">
+            <div class="car" id="player-car">🚗 (Anda)</div>
+            <div class="car" id="opponent-car">🚙 (Lawan)</div>
+        </div>
+        <div class="text-display-wrapper">
+            <p id="text-display">Menghubungkan ke server...</p>
+        </div>
+        <textarea id="typing-input" placeholder="Tunggu sebentar..." autofocus disabled></textarea>
+        <div class="stats">
+            <div id="wpm">WPM: 0</div>
+            <div id="accuracy">Akurasi: 100%</div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
